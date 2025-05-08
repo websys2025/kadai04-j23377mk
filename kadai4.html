@@ -35,8 +35,9 @@
                 static showItemList(list) {
                     console.log("商品は以下の" + Item.number + "種類です。");
 
-                    // 配列の内容を項目毎に出力
-                    // 課題4-1. ここにコードを書く
+                    for(var i=0; i<items.length; i++){// 配列の内容を項目毎に出力
+                        console.log("商品番号:",items[i].id,",商品名:",items[i].name,",金額:",items[i].price,",在庫数:",items[i].stock);
+                    }// 課題4-1. ここにコードを書く
                     console.log(""); // 空行の出力
                 }
                 
